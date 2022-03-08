@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>六角西餐廳 用餐調查</title>
+  <link rel="stylesheet" href="./dist/style/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="warpper">
+      <h1>六角西餐廳</h1>
+      <form
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdN0M30GB6NSQxfeAhWK0B4PSpuIPGVLnoWo4TrksqtkeKtRA/formResponse"
+        method="POST">
+
+        <div class="form-row">
+          <div class="form-group col-md-half"> <label for="name">姓名</label>
+            <input class="form-control" type="text" id="" name="entry.104959259"></div>
+          <div class="form-group col-md-half"> <label for="phone">電話</label>
+            <input class="form-control" type="text" id="phone" name="entry.403616441"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="date">日期</label>
+          <input class="form-control" type="date" id="date" onchange="getDate()">
+          <input type="hidden" name="entry.650799372_year" value="">
+          <input type="hidden" name="entry.650799372_month" value="">
+          <input type="hidden" name="entry.650799372_day" value="">
+        </div>
+
+
+        <div class="form-group">
+          <label for="people">用餐人數</label>
+          <select class="form-control" name="entry.1491692660" id="people">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+
+
+        <div class="form-group">
+          <label>其他項目</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="needChildChair" onchange="getOtherItem()">
+            <label class="form-check-label" for="needChildChair">
+              需要兒童座椅
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="vegetableFood" onchange="getOtherItem()">
+            <label class="form-check-label" for="vegetableFood">
+              素食餐點
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="smokingZone" onchange="getOtherItem()">
+            <label class="form-check-label" for="smokingZone">
+              吸煙區
+            </label>
+          </div>
+        </div>
+        <input type="hidden" name="dlut" value="1646749705051">
+        <button type="submit" class="submit-btn">送出</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script src="./all.js"></script>
