@@ -26,10 +26,7 @@
 
         <div class="form-group">
           <label for="date">日期</label>
-          <input class="form-control" type="date" id="date" onchange="getDate()">
-          <input type="hidden" name="entry.650799372_year" value="">
-          <input type="hidden" name="entry.650799372_month" value="">
-          <input type="hidden" name="entry.650799372_day" value="">
+          <input class="form-control" type="date" id="date" name="entry.650799372">
         </div>
 
 
@@ -53,25 +50,25 @@
         <div class="form-group">
           <label>其他項目</label>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="needChildChair" onchange="getOtherItem()">
+            <input class="form-check-input" type="checkbox" id="needChildChair" name="entry.901461210" value="需要兒童座椅">
             <label class="form-check-label" for="needChildChair">
               需要兒童座椅
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="vegetableFood" onchange="getOtherItem()">
+            <input class="form-check-input" type="checkbox" id="vegetableFood" name="entry.901461210" value="素食餐點">
             <label class="form-check-label" for="vegetableFood">
               素食餐點
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="smokingZone" onchange="getOtherItem()">
+            <input class="form-check-input" type="checkbox" id="smokingZone" name="entry.901461210" value="吸煙區">
             <label class="form-check-label" for="smokingZone">
               吸煙區
             </label>
           </div>
         </div>
-        <input type="hidden" name="dlut" value="1646749705051">
+        <input type="hidden" name="dlut" value="1647525356110">
         <button type="submit" class="submit-btn">送出</button>
       </form>
     </div>
@@ -79,5 +76,3 @@
 </body>
 
 </html>
-
-<script src="./all.js"></script>
